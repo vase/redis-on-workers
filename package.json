@@ -1,7 +1,7 @@
 {
-  "name": "redis-on-workers",
-  "version": "0.3.1",
-  "description": "Connect to your Redis server using cloudflare:sockets",
+  "name": "@vase/redis-on-workers",
+  "version": "0.3.2",
+  "description": "Redis client for Cloudflare Workers, patched and maintained by Vase for improved ACL compatibility and internal workflow standards",
   "scripts": {
     "build": "tsup",
     "test": "tsx --test"
@@ -30,8 +30,8 @@
     "tcp"
   ],
   "author": {
-    "name": "Kane",
-    "email": "kane@yeecord.com"
+    "name": "Luvesh",
+    "email": "luvesh.sadhwani@vase.ai"
   },
   "type": "module",
   "license": "MIT",
