@@ -1,10 +1,10 @@
 # Changelog
 
-## 0.3.3 - 2025-07-07
+## 0.3.4 - 2025-07-07
 
 - Update GH workflows to follow internal standards.
 - Patch unsupported ACLs in `getInitializeCommands`
-- 0.3.2 was skipped due to a mistake in the versioning process.
+- 0.3.2 & 0.3.3 was skipped due to a mistake in the versioning process.
 
 ## 0.3.1 - 2025-07-07
 
