@@ -1,6 +1,6 @@
 {
   "name": "@vase/redis-on-workers",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Redis client for Cloudflare Workers, patched and maintained by Vase for improved ACL compatibility and internal workflow standards",
   "scripts": {
     "build": "tsup",
