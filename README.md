@@ -71,3 +71,16 @@ Or you can start connection immediately by using `redis.startConnection()`.
 - `tls` (boolean): Whether to use TLS. Default: `false`.
 - `logger` (function): A function to log debug messages.
 - `connectFn` (function): Polyfill for `cloudflare:sockets`'s `connect` function if you're using it in node.js. Default: `undefined`.
+
+## Publishing (Vase)
+
+1. Make and test your commits to the master branch.
+2. Update CHANGELOG.md with a summary of changes.
+3. Bump the version in package.json as its own commit.
+4. Add a git tag matching the new version number, e.g. v1.0.0.
+5. Push the changes to the remote repository.
+6. Github actions workflow will automatically publish the package to npm because of the new tag.
+
+> **Note**\
+> This package is published to the GitHub Packages registry (not npmjs.com).
+> The publishing step in GitHub Actions uses the built-in `${{ secrets.GITHUB_TOKEN }}` for authentication, which does **not** require any manually configured secret.
