@@ -164,7 +164,12 @@ export class RedisInstance {
   private getInitializeCommands() {
     const commands: Command[] = [];
 
-    if (this.config.password) commands.push(["AUTH", this.config.password]);
+    if (this.config.username && this.config.password) {
+      // Support for ACL authentication
+      commands.push(["AUTH", this.config.username, this.config.password]);
+    } else if (this.config.password) {
+      commands.push(["AUTH", this.config.password]);
+    }
 
     if (this.config.database) commands.push(["SELECT", this.config.database]);
 
