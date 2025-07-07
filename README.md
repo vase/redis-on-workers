@@ -77,9 +77,10 @@ Or you can start connection immediately by using `redis.startConnection()`.
 1. Make and test your commits to the master branch.
 2. Update CHANGELOG.md with a summary of changes.
 3. Bump the version in package.json as its own commit.
-4. Add a git tag matching the new version number, e.g. v1.0.0.
-5. Push the changes to the remote repository.
-6. Github actions workflow will automatically publish the package to npm because of the new tag.
+4. Push the changes to the remote repository.
+5. Create a new tag using `git tag v<new-version>`
+6. Push the tag to the remote repository using `git push origin v<new-version>`.
+7. Github actions workflow will automatically publish the package to npm because of the new tag.
 
 > **Note**\
 > This package is published to the GitHub Packages registry (not npmjs.com).
